@@ -40,7 +40,10 @@ class BlogUtility {
 				array_push($sortedCategories, $wpCategoryKeyValuePairs[$medCategoryId]);
 			}
 		}
-		$doctorLinkUrl = MEDINFI_FOLDER_BASE_URL.HEADER_DOCTOR_LINK_URL;
+
+		//Removing Find Doctors, Ask Friend and Login
+
+		/*$doctorLinkUrl = MEDINFI_FOLDER_BASE_URL.HEADER_DOCTOR_LINK_URL;
 		array_push($sortedCategories,array(HEADER_DOCTOR_LINK_ID, HEADER_DOCTOR_LINK_NAME, HEADER_DOCTOR_LINK_SLUG, $doctorLinkUrl));
 		$askAFriendLinkUrl = MEDINFI_FOLDER_BASE_URL.ASK_A_FRIEND_LINK_URL;
 		array_push($sortedCategories,array(ASK_A_FRIEND_LINK_URL, ASK_A_FRIEND_LINK_NAME, ASK_A_FRIEND_LINK_SLUG, $askAFriendLinkUrl));
@@ -53,7 +56,7 @@ class BlogUtility {
         } else {
         $loginUrl = HOST_NAME.Yii::app()->baseUrl.LOGIN_URL;
         array_push($sortedCategories,array(HEADER_DOCTOR_LINK_ID, LOGIN, HEADER_LOGIN_LOGOUT_SLUG, $loginUrl ));
-         }
+         }*/
 
 		return $sortedCategories;
     }

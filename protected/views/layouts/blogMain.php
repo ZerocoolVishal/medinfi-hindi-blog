@@ -137,10 +137,7 @@
 						<div id="search-border-div" class="col-xs-12">
 							<img id="search-border" src="<?php echo HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.SEARCH_BOX_BORDER?>" alt=""/>
 						</div>
-						
-							<ul id="blog-auto-suggest-ul">
-							</ul>
-						
+						<ul id="blog-auto-suggest-ul"></ul>
 					</div>					
 				</div>
 				<?php
@@ -157,53 +154,8 @@
 						
 						for($index = 0;$index < sizeof($categories);$index++){
 							$categoryTagId = $index + 1;
-							if($categories[$index][2] == HEADER_DOCTOR_LINK_SLUG){
-
-                            /* Nitish Jha
-                               25-05-2017
-                               Below code is commented not deleted because if in future we want anything in Nav Bar we can use the below code
-                            */
-                            /* $mobileNavigationHtml = $mobileNavigationHtml.'
-							<div class="mobile-nav-separator"></div>
-                            <a id="mobile-nav-amazon-ads-anchor" target="_blank" href="https://www.amazon.in/health-and-personal-care/b/ref=sd_allcat_beauty_health_all?ie=UTF8&amp;node=1350384031&_encoding=UTF8&tag=medinfi-21&linkCode=ur2&linkId=2705ddc402eb6a5f85cbb70fae3d23de&camp=3638&creative=24630"
-                            onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Buy Health Product link in nav bar\',eventLabel: \'From Amazon\'});" >
-                            <img id="amazon-icon" style="float: left; margin-right: 3px;margin-top: 3px;" src="'.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.AMAZON_ICON.'" alt=""/>
-                            <div>BUY HEALTH PRODUCTS</div>
-                            <div>FROM AMAZON.IN</div>
-                            </a>'; */
-
-								$mobileNavigationHtml = $mobileNavigationHtml.'
-								<div class="mobile-nav-separator"></div>
-									<a id="mobile-nav-doc-anchor" href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Find doctors link in nav bar\',eventLabel: \'Find doctors in default city\'});">
-										<img id="doctor-default-img" src="'.HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.FIND_DOCTORS_IMAGE.'" alt=""/>
-										<span>'.strtoupper($categories[$index][1]).'</span>
-									</a>
-								<div class="mobile-nav-separator"></div>';
-								
-								$categoryLinkDivHtml=$categoryLinkDivHtml.'
-								<div id="doctor-link" class="col-sm-1 category-link-div">
-									<a id="header-doc-anchor" class="category-link-anchor" href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Find doctors link in header\',eventLabel: \'Find doctors in default city\'});">
-												'.strtoupper($categories[$index][1]).'
-									</a>
-								</div>';
-							}
-							else if($categories[$index][2] == ASK_A_FRIEND_LINK_SLUG){
-								$mobileNavigationHtml = $mobileNavigationHtml.'
-									<a id="mobile-nav-ask-a-friend-anchor" href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Ask a friend link in nav bar\',eventLabel: \'Ask a friend link in nav bar\'});">
-										<img id="ask-a-friend-img" src="'.HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.ASK_A_FRIEND_IMAGE.'" alt=""/>
-										<span>'.strtoupper($categories[$index][1]).'</span>
-									</a>
-								<div class="mobile-nav-separator"></div>';
-							}
-							else if($categories[$index][2] == HEADER_LOGIN_LOGOUT_SLUG){
-                                $mobileNavigationHtml = $mobileNavigationHtml.'
-                                <a href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Category link in nav bar\',eventLabel: \''.$categories[$index][2].'\'});">
-                                    <img id="ask-a-friend-img" src="'.HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.LOGIN_IMAGE.'" alt=""/>
-                                    <span>'.strtoupper($categories[$index][1]).'</span>
-                                </a>
-                                <div class="mobile-nav-separator"></div>';
-							}
-							else if(!empty($this->layoutData['selectedTerm']) && ($categories[$index][2]==$this->layoutData['selectedTerm']['selectedTermSlug'])){
+							
+							if(!empty($this->layoutData['selectedTerm']) && ($categories[$index][2]==$this->layoutData['selectedTerm']['selectedTermSlug'])){
 								$selectedTerm = $this->layoutData['selectedTerm'];
 								$mobileNavigationHtml = $mobileNavigationHtml.'
 								<a href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Category link in nav bar\',eventLabel: \''.$categories[$index][2].'\'});">
