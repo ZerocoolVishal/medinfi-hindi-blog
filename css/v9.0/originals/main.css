@@ -1,0 +1,396 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #555;
+	background: #ffffff;
+    font-family:arial;
+    font-size: 13px;
+}
+
+#page
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: white;
+	border: 1px solid #C9E0ED;
+}
+
+#header
+{
+	margin: 0;
+	padding: 0;
+	border-top: 3px solid #C9E0ED;
+}
+
+
+#content
+{
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+#sidebar
+{
+	padding: 20px 20px 20px 0;
+}
+
+#footer
+{
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+
+#logo
+{
+	padding: 10px 20px;
+	font-size: 200%;
+}
+
+#mainmenu
+{
+	background:white url(bg.gif) repeat-x left top;
+}
+
+#mainmenu ul
+{
+	padding:6px 20px 5px 20px;
+	margin:0px;
+}
+
+#mainmenu ul li
+{
+	display: inline;
+}
+
+#mainmenu ul li a
+{
+	color:#ffffff;
+	background-color:transparent;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 8px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+	color: #6399cd;
+	background-color:#EFF4FA;
+	text-decoration:none;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #B7D6E7;
+	border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #298dcd;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #0066A4;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #0066A4;
+}
+
+.operations li a:hover
+{
+	background: #80CFFF;
+}
+
+
+.doctors_biolist
+{
+  line-height: 1.2em; 
+  width: 304px;
+  border: 1px solid #eeeeee;
+  padding:10px;
+  padding: 10px;
+  margin-bottom: 12px;
+  height: 100px;
+  color: #000;
+}
+
+.items {
+    margin: 0 0 0 -8px;
+    min-height: 250px;
+}
+p
+{
+  margin: 3px 0px 0px 0px;
+}
+
+
+.list-view .pager 
+{
+    clear:both;
+    text-align: left;
+     line-height: 2;
+}
+
+
+@media only screen and  (max-width: 1024px)
+{
+    
+    .wrapper{padding:0px;}
+    .menu li {float: none; }
+    .menu li a{ font-size:25px;}
+    
+    .wrapper {width:96%;} 
+    .header { height:110px;}
+    
+    .menu {float:right; color:#999999; font-size:30px; margin-top:20px;}
+
+    .footer {height:auto;  text-align:center; height:200px;}
+    
+   /* .footerleft  {width:100%; float:none; font-size:12px; }
+    .footerleft a {font-size:12px;}
+    .footerright {width:100%; float:none; font-size:12px; margin:52px 0px 18px 0px; }
+    .footerright a {font-size:12px;}
+    */
+    .google_play 
+    {
+         margin: 10px 0 0;
+         width: 108px;
+         float:none;
+    }
+    .mainHome {width:100%; height:1500px; }    
+    .mainHospital { overflow:auto;}
+    .location-search {height:1300px; padding:10px; margin:10px 0; border:1px solid #CCC; overflow:auto;}
+    .mainfeedback {height:1400px; overflow:auto;}
+    
+    
+    .text {font-size:20px;}
+    .span1 {width:98%; margin-left:10px; text-align:center; }
+    .heading { font-size:20px; }
+.name{  font-size:25px;}
+
+
+.span2{width:98%; text-align:center;   }
+.mainLog {height:180px; overflow:auto; margin-bottom:40px;}
+.login{width:98%;padding-top:25px;height:50px;text-align:center;border:1px solid #2f86ed; font-size:25px;}
+.signup {width:98%;padding-top:25px;height:50px;text-align:center;border:1px solid #2f86ed; font-size:25px;}
+
+    
+    .search{ height:250px;}
+    .search-box {width:94%; background:#f0f0f0; height:150px; padding:10px;}
+    .search-dr-name{width:100%; float:none; margin-top:10px;} 
+    .search-dr-name input{width:94%; border:0; height:30px; padding:5px; font-size:12px; } 
+    .search-button { float:none; text-align:center; margin-top:10px;}
+
+
+.betaver {
+    background: #999999 none repeat scroll 0 0;
+    color: #000;
+    font-size: 8px;
+    font-weight: 700;
+    margin: 0 0 0 4px;
+    padding: 3px;
+    text-align: center;
+    width: 22%;
+    background-image: linear-gradient(to bottom, #f0f0f0 0px,#D8D8D8 100%);
+}
+
+.doctors_biolist {
+    line-height: 1.2em;
+    width: 226px;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    padding: 10px;
+    margin-bottom: 12px;
+    height: 125px;
+    color: #000;
+}
+.docname
+{
+    font-size:12px;
+    color:#000;
+}
+
+.docname a
+{
+    font-size:12px;
+    color:#000;
+}
+
+
+.docqual
+{
+    font-size:12px;
+}
+
+.hospname
+{
+    font-size:9px;
+}
+.reviewtext
+{
+    font-weight:400; 
+    color:#000;
+    font-size:12px;
+}
+
+.imgresp
+{
+    width:140px; 
+    height:50px;
+}
+
+
+   
+}
+/*menu style*/
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+      border-right: 1px solid #000;
+    float: left;
+    margin: 2px;
+    padding-right: 10px;
+}
+.menu li.last{border-right:none;}
+
+.menu li a {
+    display: block;
+    color:#000;
+    text-decoration:none;   
+    
+}

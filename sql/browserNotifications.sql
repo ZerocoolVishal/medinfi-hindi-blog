@@ -1,0 +1,3 @@
+ALTER TABLE `blog_notification_subscription` CHANGE `recipient` `recipient` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `med_notification` CHANGE `recipient` `recipient` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `blog_user_track` CHANGE `recipient` `recipient` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

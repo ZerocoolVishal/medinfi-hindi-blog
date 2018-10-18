@@ -1,0 +1,874 @@
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+table tbody tr:hover td,
+table tbody tr:hover th {
+  background-color: #f5f5f5;
+}
+table {
+  width: 100%;
+}
+.subscription-button:hover,.subscription-button:active,
+ .subscription-button:focus
+ {
+     outline: none !important;
+     border: 1px solid #ea235b;
+     color: #ea235b; /* here configure as your needs */
+     -webkit-tap-highlight-color: #ea235b;
+  }
+  #subButtonNewsletter:active, #subButton:active, #unsubButton:active,
+  #subButtonNewsletter:focus, #subButton:focus, #unsubButton:focus{
+     outline: none !important;
+  }
+table > tbody > tr >  td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+a {
+    color:#EA235B !important;
+}
+.tag-anchor:visited,#xs-category-link:visited,.comment-date-anchor:visited,.comment-reply:visited {
+    color:#EA235B;
+}
+.tag-anchor:hover,#xs-category-link:hover,.comment-date-anchor:hover,.comment-reply:hover {
+    color:#EA235B;
+}
+.tag-anchor:active,#xs-category-link:active,.comment-date-anchor:active,.comment-reply:active {
+    color:#EA235B;
+}
+#post-title{
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#post-image{
+    width: 100%;
+    padding: 4px;
+    border-color: #EDEDED;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+}
+#post-content{
+    word-wrap: break-word;
+}
+#center-share-img{
+    padding-right: 10px;
+}
+#share-text{
+    padding-top: 5px;
+}
+#share-img-div{
+    padding-bottom: 10px;
+}
+#center-share-div, #center-newsletter-div{
+    padding-top: 10px;
+    //padding-left: 5px;
+    padding-bottom: 10px;
+}
+#feedback-img-div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#center-share-img{
+    width:40px;
+}
+#center-share-text, #center-newsletter-text {
+    max-width: none;
+    font-size: 14px;
+}
+#center-share-text, #center-newsletter-text {
+    padding-top: 7px;
+}
+#recently-published-text-div{
+    border-bottom: black solid thin;
+}
+#recently-published-text-span{
+    font-weight: 600;
+    font-size: 16px;
+}
+#published_on_date {
+    padding-left: 2px;
+}
+#post-tags {
+    margin-bottom: 10px;
+}
+#xs-category-link{
+    text-decoration: none;
+    padding-left: 3px;
+}
+#xs-category-link-text{
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 500;
+}
+.share-feedback-img, .newsletter-img{
+    float: left;
+}
+.share-feedback-text, .newsletter-text{
+    float: left;
+    line-height: 1.2;
+    color: black;
+    padding-left: 2px;
+
+}
+.share-feedback-img-anchor, .newsletter-img-anchor{
+    display: inline-block;
+}
+.recent-image-div{
+    display:table-cell;
+}
+.recent-image {
+    width: 150px;
+    border-radius: 3px;
+}
+.recent-row {
+    position:relative;
+    display:table;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.recent-post-border {
+    height: 1px;
+    border-bottom: #D9D9D9 dotted thin;
+}
+.recent-name-date {
+    display:table-cell;
+    vertical-align: top;
+}
+.recent-name-date {
+    padding-left:10px;
+}
+.recent-date {
+    color: black;
+}
+.recent-name {
+    color: #EA235B;
+    font-weight: 400;
+    line-height: 1.42857143;
+    margin: 0px;
+}
+
+.xs-category-link-element{
+  display: inline;
+}
+#response-section-title {
+  font-size: 21px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #f1f6f6;
+}
+#comments-section-title {
+  font-size: 19.5px;
+}
+#response-form{
+  overflow: hidden;
+}
+.response-form-row{
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 15px;
+}
+.reponse-form-label-div{
+  width: 20%;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+.reponse-form-input-div{
+  width: 80%;
+  float: left;
+}
+#response-comment-text-area {
+  width: 100%;
+  resize: none;
+}
+#response-name-input, #response-email-input{
+  width: 50%;
+  height: 35px;
+}
+#post-button-whitespace {
+  min-height: 1px;
+}
+#post-button {
+  /*background-color: #b3b3b3;*/
+  background-color: #EA235B;
+  width: 40%;
+  border-style: hidden;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+#post-button:hover, #post-button:focus {
+  outline: 0;
+}
+#comment-email-subtext{
+  padding-left: 5px;
+}
+.error-message, .email-error-message{
+  padding-left: 5px;
+  display: block;
+  color: red;
+  font-weight: 400;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  /*display: none;*/
+}
+.comment-date-anchor,.comment-reply{
+  text-decoration: none !important;
+}
+.reponse-form-input{
+  border: thin solid #cccccc;
+  border-radius: 3px;
+  padding-left: 5px;
+  display: block;
+}
+.reponse-form-input:focus{
+    outline: 0;
+    border-color: rgba(234, 35, 91,0.8);
+}
+
+.comment-element{
+  display: table;
+  margin-bottom: 36px;
+}
+.user-profile-image{
+  width: 70px;
+  border-radius: 3px;
+  display: table-cell;
+}
+.comment-details {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 10px;
+}
+.comment-meta, .comment-text, .comment-reply {
+  display: block;
+}
+.comment-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.comment-reply {
+  color: #EA235B;
+  cursor: pointer;
+}
+
+#shareModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#shareModalContent {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+#shareModalHeader{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color:black;
+    padding-bottom: 5px;
+}
+
+
+/* The Close Button */
+#shareClose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 0.5;
+    margin-right: 20px;
+}
+/* The Modal (background) */
+#comment-acknowledgement-modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#subscription-acknowledgement-modal, #unsubscribe-modal-popup{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#comment-acknowledgement-modal-content{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    width: 280px; /* Could be more or less, depending on screen size */
+}
+#comment-acknowledgement-modal-content{
+  font-size: 18px;
+}
+#subscription-acknowledgement-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    width: 280px; /* Could be more or less, depending on screen size */
+}
+#subscription-acknowledgement-modal-content {
+  font-size: 18px;
+}
+
+
+/* The Close Button */
+#comment-acknowledgement-modal-close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+    /* Nitish Jha
+       Blog Notification */
+#subscription-acknowledgement-modal-close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+.acknowledgement-model-text{
+    color: black;
+    font-size: 30px;
+    padding-left: 15px;
+}
+.acknowledgement-text, #unsubscribe-radio-button{
+    color: black;
+    font-size: 10px;
+}
+#subscription-acknowledgement-modal-content {
+    color: #aaa;
+    //float: right;
+    font-size: 28px;
+    font-weight: bold;
+   // margin-top: -15px;
+}
+#unsubscribe-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    width: 360px; /* Could be more or less, depending on screen size */
+    height: 270px;
+    //color: #aaa;
+    //font-weight: bold;
+
+}
+#shareClose:hover, #comment-acknowledgement-modal-close:hover,
+#shareClose:focus, #comment-acknowledgement-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-share-img {
+  width:20px;
+
+}
+#get-newsletter-img {
+  width:20px;
+  margin-left: 20px;
+}
+#get-health-newsletter-img{
+  width:30px;
+}
+#get-health-newsletter-text{
+   font-weight: 600;
+   font-size: 17px;
+}
+
+#modal-newsletter-img {
+  width:40px;
+
+}
+.share-imgs {
+  display: inline-block;
+margin: 5px 10px;
+width: 12%;
+}
+
+#shareModalBody{
+  text-align: center;
+  padding: 10px;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+#policy-termsncondition, #newsletter-policy-termsncondition{
+  font-size:12px;
+  text-align:left;
+}
+#newsletter-subscription-button-div{
+   padding-bottom: 15px;
+}
+
+
+#subButton{
+    font-size: 20px;
+    border: 1px solid rgb(210, 201, 201);
+    border-radius: 9px;
+    border-color: #D2C9C9;
+    color: rgb(234, 35, 91);
+    background-color: white;
+    height: 45px;
+    width: 75%;
+    box-shadow: none;
+}
+#unsubButton{
+    font-size: 20px;
+    border: 1px solid rgb(210, 201, 201);
+    border-radius: 9px;
+    border-color: #D2C9C9;
+    color: rgb(234, 35, 91);
+    background-color: white;
+    height: 40px;
+    width: 135px;
+    box-shadow: none;
+}
+#subButtonNewsletter{
+    font-size: 20px;
+    border: 1px solid rgb(210, 201, 201);
+    border-radius: 9px;
+    border-color: #D2C9C9;
+    color: rgb(234, 35, 91);
+    background-color: white;
+    height: 45px;
+    width: 300px;
+    box-shadow: none;
+}
+#unsubscription-close{
+      font-size: 13px;
+      font-weight: bold;
+  }
+#newsletterClose:hover, #subscription-acknowledgement-modal-close:hover,
+#newsletterClose:focus, #subscription-acknowledgement-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#newsletter-info-text-div{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#newsletter-health-info-text-div{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#newsletter-send-details-text-div, #newsletter-health-send-details-text-div{
+   padding-top: 15px;
+   /*padding-left: 15px;*/
+   font-size: small;
+   font-weight: bold;
+}
+
+.subscription-button{
+  background-color: white;
+  border-radius: 9px;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-color: #D2C9C9;
+  border: 1px solid rgb(210, 201, 201);
+  margin-top: 3px;
+  margin-right: 5px;
+}
+#newsletterModalBody{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#email-notification-border, #email-newsletter-notification-border{
+    max-width: 90%;
+}
+#email-notification, #email-newsletter-notification{
+    border: 0;
+    box-shadow: none;
+}
+#newsletterModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#newsletterModalContent {
+    background-color: white;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+#newsletterModalHeader{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color:black;
+    padding-bottom: 5px;
+}
+#unsubscribe-text{
+    padding-top: 25px;
+}
+/* input[type=radio] {
+    border: 0px;
+    width: 25px;
+    height: 2em;
+} */
+#unsubscribe-radio-button{
+    width: 23px;
+    height: 26px;
+    vertical-align: middle;
+}
+#unsub-newsletter-text{
+   padding-top: 5px;
+   font-size: 17px;
+   font-weight: bold;
+}
+#remove-sub{
+ font-size: 12px;
+ vertical-align: middle;
+ font-weight: bold;
+}
+#unsubscribe-button{
+  padding-top: 35px;
+}
+#unsubscribe-submit-button-div{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#newsletterHeader{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color:black;
+    padding-top: 15px;
+}
+
+
+/* The Close Button */
+#newsletterClose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 0.5;
+    margin-right: 20px;
+}
+
+#mobile-amazon-banner-ads-anchor, .amazon_affiliate_ads, .adsense_ads{
+   display: none;
+   }
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+/*
+#center-share-div {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+#center-share-div {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+#center-newsletter-div{
+   padding-left:0px;
+  padding-right:0px;
+}
+*/
+.s-n-text{
+  max-width: 70%;
+}
+
+    /*
+      Blog Notification Unsubscribe
+      Nitish Jha
+      13-04-2017
+    */
+
+
+#unsubscription-radio-click{
+     font-size: 12px;
+     padding-left: 30px;
+  }
+body { cursor: pointer; }
+@media(max-width:480px){
+
+#mobile-amazon-banner-ads-anchor {
+   display: block;
+   }
+
+  #response-name-input, #response-email-input{
+    width: 80%;
+  }
+  #unsubscription-radio-click{
+       font-size: 10px;
+       padding-left: 20px;
+  }
+  #subButtonNewsletter{
+      width: 230px;
+  }
+  #post-button {
+    width: 50%;
+  }
+  #unsubscribe-modal-content{
+     width: 290px;
+     height: 243px;
+  }
+  #unsubscribe-newsletter-img{
+    width: 35px;
+  }
+  #unsub-newsletter-text{
+    font-size: 13px;
+  }
+  #unsubscribe-radio-button {
+      width: 14px;
+      height: 15px;
+  }
+  #remove-sub {
+      font-size: 11px;
+  }
+  #unsubButton {
+      font-size: 15px;
+      height: 35px;
+      width: 85px;
+  }
+  #unsubscription-close{
+      font-size: 12px;
+  }
+  #unsubscribe-submit-button-div {
+      padding-top: 30px;
+      padding-bottom: 10px;
+  }
+  .reponse-form-label-div{
+    width: 100%;
+    clear: right;
+    text-align: left;
+  }
+  .reponse-form-input-div{
+    width: 100%;
+  }
+
+  #shareModalContent {
+      width:80%;
+    }
+  #newsletterModalContent{
+      width: 90%;
+  }
+  .share-imgs {
+      margin: 5px 7px;
+      width: 12%;
+  }
+  #center-share-text {
+      max-width: 70%;
+      padding-top: 0px;
+  }
+
+  #center-newsletter-text {
+     max-width: 70%;
+      padding-top: 0px;
+  }
+
+#newsletterModalBody{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+}
+
+@media(min-width:481px)and (max-device-width : 767px){
+
+  .share-imgs {
+      margin: 5px 9px;
+      width: 12%;
+  }
+  #shareModalBody{
+    text-align: center;
+    padding: 5px;
+  }
+
+   #center-share-text {
+      max-width: 70%;
+      padding-top: 0px;
+  }
+
+  #center-newsletter-text {
+     max-width: 70%;
+      padding-top: 0px;
+  }
+ #newsletterModalContent{
+    width: 80%;
+  }
+ #subButtonNewsletter{
+        width: 290px;
+  }
+}
+/*@media (max-device-width : 510px){
+  table > tbody > tr >  td {
+    line-height: 10px;
+    font-size : 7px;
+  }
+}*/
+@media(max-width:767px){
+
+    .recent-name {
+        font-size: 14px;
+    }
+    .recent-date {
+        font-size: 11px;
+    }
+    .recent-image{
+        width: 100px;
+    }
+    .amazon_affiliate_ads{
+     display: block;
+     text-align: center;
+    }
+
+}
+@media(min-width:768px){
+    #newsletterModalContent{
+      width: 40%;
+    }
+    #xs-category-link{
+      display: none;
+    }
+    .adsense_ads{
+         display: block;
+        }
+    .recent-name {
+        font-size: 14px;
+    }
+    .recent-date {
+        font-size: 11px;
+    }
+    .recent-image{
+        width: 115px;
+    }
+
+    #shareModalContent {
+      width:50%;
+    }
+
+    .share-imgs {
+      margin: 5px 10px;
+      width: 12%;
+    }
+}
+@media(min-width: 992px){
+    .recent-name {
+        font-size: 12px;
+    }
+    .recent-date {
+        font-size: 10px;
+    }
+    .recent-image{
+        width: 100px;
+    }
+
+    #shareModalContent {
+      width:27%;
+    }
+
+    .share-imgs {
+      margin: 5px 8px;
+      width: 15%;
+    }
+
+    #whatsapp-share-img{
+      display:none;
+    }
+}
+@media(min-width:1200px){
+    #newsletterModalContent{
+      width: 35%;
+    }
+    .recent-name {
+        font-size: 14px;
+    }
+    .recent-date {
+        font-size: 11px;
+    }
+
+    #shareModalContent {
+      width:25%;
+    }
+
+    .share-imgs {
+      margin: 5px 12px;
+      width: 15%;
+    }
+
+    #whatsapp-share-img{
+      display:none;
+    }
+}
+/*
+Nitish Jha
+12-05-2017
+First Cry Banner ads
+We are defining these width only for banner ads to come in small mobile devices
+*/
+@media(max-width:350px){
+      .first-cry-img{
+         width: 100%;
+      }
+}
+/*.close:hover,*/
+/*.close:focus {*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*}*/

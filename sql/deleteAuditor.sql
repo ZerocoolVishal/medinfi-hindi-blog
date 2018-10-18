@@ -1,0 +1,1 @@
+DELETE FROM `user_role` WHERE user_id = 2763 and role_id = 7;

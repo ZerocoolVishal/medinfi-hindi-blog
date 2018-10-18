@@ -1,0 +1,1 @@
+ALTER TABLE `med_block_ads_posts` ADD `link` TEXT NULL DEFAULT NULL ;

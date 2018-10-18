@@ -1,0 +1,513 @@
+a:link {
+    text-decoration: none;
+}
+a:focus {
+    outline:none;
+}
+a:hover {
+    cursor: pointer;
+}
+#blog-auto-suggest-ul{
+    float: left;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    left: 0;
+    padding: 0px 15px;
+    margin: 0px;
+    margin-top: 40px;
+    width: 100%;
+    display: none;
+}
+.blog-auto-suggest-li {
+    background-color: white;
+    padding-top: 5px;
+    border-top: solid #D9D9D9 1.5px;
+    border-bottom: solid #D9D9D9 1.5px;
+    color: #757575;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.blog-auto-suggest-loading-li {
+    background-color: white;
+    padding-top: 5px;
+    border: solid #D9D9D9 1.5px;
+    color: #757575;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.blog-auto-suggest-li:hover ,.highlighted-element {
+        background-color:#D9D9D9;/* hsl(0, 8%, 82%);*/
+		color: black;
+}
+.mark {
+    color: black;
+    font-weight: 700;
+}
+
+
+#bottom-border {
+    background-color: #e42a5d;
+    height: 3px;
+}
+#page-wrap1, #footer1{
+    background-color: #ffffff;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+#mobile-navigation-button{
+    float: left;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.mobile-navigation-div {
+    width: 25px;
+    height: 5px;
+    background-color: grey;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+#logo-anchor{
+    float: left;
+}
+#doctor-link {
+    border-left: #D9D9D9 solid thin;
+}
+#category-links-group-3 {
+    border-left: #EA235B solid thin ;
+}
+#category-1,#category-2,#category-3,#category-4,#category-5,#category-6, #header-doc-anchor {
+    color: #EA235B;
+}
+#blog-search:-moz-placeholder { /* Firefox 18- */
+   font-style: italic;  
+}
+#blog-search::-moz-placeholder{ /* Firefox 19+ */
+   font-style: italic;
+}
+#blog-search::-webkit-input-placeholder{
+    font-style: italic;
+}
+:-ms-input-placeholder {  
+   font-style: italic;  
+}
+#get-app-text {
+    color: black;
+}
+#get-app-anchor{
+    float: right;
+}
+#banner-div {
+    /*background:url("../../images/template/footer-banner.png");    */
+    /*height:90px;*/
+    text-align: center;
+    border-top: #cfb5be double thin;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#android-download-bottom{
+	/*padding-top:25px; OLD*/
+    height: 45px;
+}
+#get-app-anchor-bottom{
+    display: inline-block;
+}
+.footer-label{
+    font-weight: 400;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+#footer-label-1{
+    color: black;
+}
+#footer-label-2{
+    margin-top: -5px;
+    color: #EA235B;
+}
+#link-inner-div {
+    display: inline-block;    
+}
+#link-div{
+    background-color: black; 
+}
+#copyright {
+    padding-top: 6px;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+}
+#link-bootstrap {
+    text-align: center !important;
+}
+#blog-txt{
+    font-size:18px;
+    padding-right: 0px;
+    text-align: right;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#search-glass{
+    max-height: 34px;
+    width: auto;
+    float: right;
+    cursor: pointer;
+}
+#blog-search{
+    
+    width: 90%;
+    float: left;
+    border: 0px;
+    box-shadow: none;
+    /*Use the below mentioned properties if we want to keep the search glass absolute
+    width: 100%;
+    float: left;
+    border: 0px;
+    box-shadow: none;*/
+}
+#search-glass-div{
+    width: 10%;
+    float: left;
+    /*Use the below mentioned properties if we want to keep the search glass absolute
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    background-color: white;*/
+}
+#search-border {
+    max-width: 100%;
+}
+#header-border-line {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f1f6f6;
+    margin-bottom: 10px;
+}
+.anchor-div {
+    font-size: 12px;
+}
+.selected-outer-div {
+    display: inline-block;
+}
+.selected-inner-div {
+    display: table-caption;
+    border-bottom: 2px solid #EA235B;
+}
+.category-link-anchor {
+    font-size: 12px;
+    font-weight: bold;
+    color: #EA235B;
+    margin-top: 10px;
+    /*display: table-caption;*/
+    /*border-bottom: 2px solid #EA235B;*/
+}
+.category-link-div {
+    cursor: default;
+    margin-top:10px;
+    margin-bottom:10px;
+    line-height: 1.2;
+    text-align: left;
+}
+.footer_links {
+    display: table-cell;
+    color: white !important;
+}
+.footer_links:hover{
+    color: #23527c !important;
+}
+html, body {
+  height: 100%;
+}
+#page-wrap:after {
+  content: "";
+  display: block;
+}
+#page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  /*margin-bottom: -114px; */
+}
+#footer, #page-wrap:after {
+  /*height: 114px; */
+}
+
+
+@media(max-width:346px){
+    #link-bootstrap{
+        padding-right:0px;
+        padding-left:0px;
+    }
+}
+@media(max-width:356px){
+    #android-download-top{
+        padding-right:0px;
+    }
+}
+@media(max-width:480px){
+    #search-glass{
+        height: 26px;
+        margin-top: 4px;
+    }
+	.footer_links{
+		font-size: 13px;
+	}
+    #blog-auto-suggest-ul{
+        margin-top: 39px;
+    }
+}
+@media(min-width:481px)and (max-device-width : 767px){
+	/*Removed as was unnecessarily was making the alignment of the image incorrect for this range.
+     *#android-download-bottom{
+        margin-left:20%;
+    }*/
+    .footer_links{
+        font-size: 15px;
+    }
+    #blog-auto-suggest-ul{
+        margin-top: 41px;
+    }
+}
+@media(min-width:501px) and (max-device-width : 767px){
+    .category-link-div {
+        text-align: center;
+    }
+    .selected-outer-div {
+        display: block;
+    }
+    .selected-inner-div {
+        display: inline-block;
+        border-bottom: 2px solid #EA235B;
+    }
+}
+@media(max-width:767px){
+    #get-app-text {
+        padding-top: 16px;
+        font-size: 11px;
+    }
+    #medinfi-logo {
+        width: 60px;
+        height: 43px;
+        /*padding-left: 5px;*/
+    }
+    #android-top {
+        height: 47px;
+        width: 40px;
+    }
+    #getApp {
+        padding-top: 16px;
+        font-size: 11px;
+    }
+    #link-div {
+        height: 50px;
+    }
+    #page-wrap {
+        /*margin-bottom: -140px;*/
+        margin-bottom: -174px;/* equal to footer height */
+    }
+    #footer, #page-wrap:after {
+        /*height: 140px;*/
+        height: 174px;
+    }
+    .category-link-div{
+        display: none;
+    }
+}
+@media(min-width:768px){
+    #logo,#blog-search-bar,#search-border-div {
+        padding-left: 0px;
+    }
+    #txt-search-bar-row {
+        margin-left:0px;
+    }
+    #mobile-navigation-button{
+        display: none;
+    }
+    #get-app-text {
+        padding-top: 16px;
+        font-size: 12px;
+	}
+    #medinfi-logo{
+        width: 89px;
+        height: 60px;
+        padding-left: 10px;
+    }
+    #android-top {
+        height: 50px;
+        width: 46px;
+	}
+    .footer_links{
+        font-size: 14px;
+    }
+    #page-wrap {
+        /*margin-bottom: -114.6px;/* equal to footer height */
+        margin-bottom: -148px;
+    }
+    #footer, #page-wrap:after {
+        /*height: 114.6px;*/
+        height: 148px;
+    }
+    #blog-auto-suggest-ul{
+        /*padding-left: 30px;*/
+    }
+    .blog-auto-suggest-li {
+        border: solid #D9D9D9 1.5px;
+    }
+    /*#doctor-link{
+        margin-left: -5px;
+    }*/
+}
+
+@media(min-width:768px) and (max-width : 991px){
+    .category-link-div{
+        width: 9.52% !important;
+    }
+    .category-link-anchor{
+        font-size: 10px;
+    }
+    #doctor-link{
+        padding-left: 4px;
+    }
+}
+@media(min-width:992px){
+    .category-link-anchor{
+        font-size: 11px;
+    }
+    #get-app-text {
+        padding-top: 23px;
+        font-size: 12px;
+    }
+    #medinfi-logo{
+        width: 89px;
+        height: 60px;
+        padding-left: 10px;
+    }
+    #android-top {
+        height: 55px;
+        width: 46px;
+        padding-top: 5px;
+    }
+    .footer_links{
+        font-size: 15px;
+    }
+    #link-div {
+        height: 34px;
+    }
+    #page-wrap {
+        /*margin-bottom: -124px;/* equal to footer height */
+        margin-bottom: -158px;
+    }
+    #footer, #page-wrap:after {
+        /*height: 124px;*/
+        height: 158px;
+    }
+    #doctor-link{
+        padding-left: 9px;
+    }
+}
+@media(min-width:1200px){
+    .category-link-anchor{
+        font-size: 12px;
+    }
+    #get-app-text {
+        padding-top: 23px;
+        font-size: 12px;
+    }
+    #medinfi-logo{
+        width: 95px;
+        height: 60px;
+        padding-left: 10px;
+    }
+    #android-top {
+        height: 55px;
+        width: 46px;
+        padding-top: 5px;
+    }
+    /*#category-link-div-6{
+        width: 7% !important;
+    }*/
+    #doctor-link{
+        margin-left: -5px;
+        padding-left: 15px;
+    }
+}
+
+
+
+#label-row-div {
+    display: inline-block;
+    position: relative;
+    padding-left: 32px;
+    width: 100%;
+}
+#nav-bar-label {
+    float: left;
+    font-weight: 500;
+    color: grey;
+    white-space: nowrap;
+}
+#doctor-default-img, #ask-a-friend-img{
+    width: 35px;
+}
+.mobile-nav-separator {
+    background-color: #D9D9D9;
+    height: 1px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* The side navigation menu */
+.mobile-nav {
+    /*height: 100%; /* 100% Full-height */
+    height: 2000px; /* This is to avoid rendering flicker on the bottom of the nav bar on scrolling in mobile browser*/
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px; /* Place content 15px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.mobile-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #EA235B;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Position and style the close button (top right corner) */
+.mobile-nav .close-button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 0px;
+    line-height: 0.5;
+    /*float: right;*/
+    /*padding-right: 15px;*/
+    /*font-size: 30px;*/
+    margin-top: -5px;
+    color: grey !important;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .mobile-nav {height: 100%;}
+    .mobile-nav {padding-top: 15px;}
+    .mobile-nav a {font-size: 13px;}
+}
+
+
+

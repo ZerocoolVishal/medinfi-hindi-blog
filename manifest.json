@@ -1,0 +1,13 @@
+{
+  "name": "Browser notification",
+  "short_name": "Browser notification",
+  "icons": [{
+    "src": "images/backend/logo.jpg",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "display": "standalone",
+  "gcm_sender_id": "732581803034",
+  "gcm_user_visible_only": true,
+  "permissions": [ "gcm","storage","pushMessaging","notifications" ]
+}
