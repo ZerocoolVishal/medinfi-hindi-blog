@@ -74,22 +74,19 @@
 		<div id="bootstrap-container" class="container" >
 			<div id="header-logo-row" class="row" >
 				<div id="logo" class="col-lg-2 col-md-2 col-sm-3 col-xs-6" >
-					<?php
-						if(!empty($this->layoutData['categories'])){
-							echo '
-								<span id="mobile-navigation-button" ><!--&#9776;-->
-									<div class="mobile-navigation-div"></div>
-									<div class="mobile-navigation-div"></div>
-									<div class="mobile-navigation-div"></div>
-								</span>
-								';
-						}?>
+					<span id="mobile-navigation-button" ><!--&#9776;-->
+                        <div class="mobile-navigation-div"></div>
+                        <div class="mobile-navigation-div"></div>
+                        <div class="mobile-navigation-div"></div>
+                    </span>
 					<a id="logo-anchor" href="<?php echo MEDINFI_FOLDER_BASE_URL."/"?>" onclick="ga('send', {hitType: 'event',eventCategory:'<?php echo $layoutData['pageName'] ?>', eventAction: 'Home',eventLabel: 'Home'});">
 						<img id="medinfi-logo" src="<?php echo HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.MEDINFI_LOGO?>" alt="Medinfi Logo"/>
 					</a>
 				</div>
+
 				<div id="white-space" class="col-lg-7 col-md-6 col-sm-4 col-xs-1">
 				</div>
+
 				<div id="android-login" class="col-lg-3 col-md-4 col-sm-5 col-xs-5">
 				<div id="android-download-top">
 					<a rel="nofollow" id="get-app-anchor" href="https://play.google.com/store/apps/details?id=com.medinfi" target="_blank" onclick="ga('send', {hitType: 'event',eventCategory:'<?php echo $layoutData['pageName'] ?>', eventAction: 'Download App Top',eventLabel: 'Download App Top'});">
@@ -117,28 +114,8 @@
 </div>
 			</div><!--header-logo-row-->
 			<div id="blog-search-row" class="row" >
-				<div id="txt-search-bar" class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
-					<div id="txt-search-bar-row" class="row" >
-						
-						<div id="blog-search-bar" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<?php
-									$searchBoxHtml = '<input id="blog-search" type="text" class="form-control"  placeholder="Search the blog"';
-									if(!empty($this->layoutData['searchInput'])){
-										$searchBoxHtml = $searchBoxHtml.'value = "'.$this->layoutData['searchInput'].'"';
-									}
-									$searchBoxHtml = $searchBoxHtml.'/>
-									';
-									echo $searchBoxHtml;
-								?>
-								<div id="search-glass-div">
-									<img id="search-glass" src="<?php echo SEARCH_GLASS_ENCODED_IMAGE ?>" alt=""/>
-								</div>
-						</div>	
-						<div id="search-border-div" class="col-xs-12">
-							<img id="search-border" src="<?php echo HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.SEARCH_BOX_BORDER?>" alt=""/>
-						</div>
-						<ul id="blog-auto-suggest-ul"></ul>
-					</div>					
+				<div id="txt-search-bar" class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+                    <!--Search box removed-->
 				</div>
 				<?php
 				if(!empty($this->layoutData['categories'])){
@@ -151,10 +128,10 @@
 						</label>
 						<a id = "nav-close" href="javascript:void(0)" class="close-button">&times;</a>
 					</div>';
-						
+
 						for($index = 0;$index < sizeof($categories);$index++){
 							$categoryTagId = $index + 1;
-							
+
 							if(!empty($this->layoutData['selectedTerm']) && ($categories[$index][2]==$this->layoutData['selectedTerm']['selectedTermSlug'])){
 								$selectedTerm = $this->layoutData['selectedTerm'];
 								$mobileNavigationHtml = $mobileNavigationHtml.'
@@ -181,7 +158,7 @@
 												'.strtoupper($categories[$index][1]).'
 									</a>
 								</div>';
-							}							
+							}
 						}
 						$mobileNavigationHtml = $mobileNavigationHtml.'
 						</div>';
