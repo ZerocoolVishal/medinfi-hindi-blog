@@ -141,7 +141,7 @@
 								$categoryLinkDivHtml=$categoryLinkDivHtml.'
 								<div id="category-link-div-'.$categoryTagId.'" class="col-sm-1 category-link-div selected-outer-div">
 									<div class="selected-inner-div">
-										<a id="category-'.$categoryTagId.'" class="category-link-anchor" href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Category link in header\',eventLabel: \''.$categories[$index][2].'\'});">
+										<a id="category-'.$categoryTagId.'" style="font-size: 17px;" class="category-link-anchor" href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Category link in header\',eventLabel: \''.$categories[$index][2].'\'});">
 											'.strtoupper($categories[$index][1]).'
 										</a>
 									</div>
@@ -154,7 +154,7 @@
 								</a>';
 								$categoryLinkDivHtml=$categoryLinkDivHtml.'
 								<div id="category-link-div-'.$categoryTagId.'" class="col-xs-1 category-link-div">
-									<a id="category-'.$categoryTagId.'" class="category-link-anchor" href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Category link in header\',eventLabel: \''.$categories[$index][2].'\'});">
+									<a id="category-'.$categoryTagId.'" style="font-size: 17px;" class="category-link-anchor" href="'.$categories[$index][3].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Category link in header\',eventLabel: \''.$categories[$index][2].'\'});">
 												'.strtoupper($categories[$index][1]).'
 									</a>
 								</div>';
@@ -170,7 +170,7 @@
 			</div>
 		</div><!--bootstrap-container-->
 	</div>	
-	<div id="page" class="container" >
+	<div id="page" class="container" style="margin-top: 30px">
 		<?php echo $content; ?>
 	</div><!-- page -->
 </div><!--page-wrap-->

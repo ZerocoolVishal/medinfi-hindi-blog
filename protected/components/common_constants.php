@@ -169,7 +169,7 @@ define("GET_HEALTH_NEWSLETTER","GET HEALTH NEWSLETTER");
 define("UNSUBSCRIBE_NEWSLETTER_TEXT","Confirm Unsubscribe Request");
 define("GET_NEWSLETTER_INFO","Latest health and wellness articles from the medinfi blogs delivered by email.");
 define("HOW_OFTEN_SHOULD_WE_SEND","How often should we send?");
-define("VIEW_ALL_BLOG_POSTS","View All Blog Posts");
+define("VIEW_ALL_BLOG_POSTS","सभी ब्लॉग पोस्ट देखें");
 define("MEDINFI_MOBILE_NAV_TEXT","MEDINFI BLOG");
 define("COMMENT_SECTION_TITLE"," Thoughts on this blog post");
 define("COMMENT_EMAIL_SUBTEXT","आपका उत्तर प्रकाशित नहीं किया जाएगा");
