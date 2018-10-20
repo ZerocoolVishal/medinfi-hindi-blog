@@ -9,6 +9,11 @@ define("JS_BASE_PATH","/js/v9.2/originals/");*/
 define("CSS_BASE_PATH","/css/v9.2/");
 define("JS_BASE_PATH","/js/v9.2/");
 
+//Language of the Blog
+define("LANGUAGE","हिंदी");
+
+define('HINDI_BLOG_URL', "#");
+define('ENGLISH_BLOG_URL', "#");
 
 define("POST_DETAIL_PAGE_IMAGE_BASE_PATH","/images/post-detail/");
 define("TEMPLATE_IMAGE_BASE_PATH","/images/template/");

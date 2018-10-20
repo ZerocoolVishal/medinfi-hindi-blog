@@ -63,7 +63,34 @@
 	<script src="<?php echo HOST_NAME.Yii::app()->baseUrl.JS_BASE_PATH.BROWSER_NOTIFICATION_JS?>"></script>
 
 	<link rel="shortcut icon" href="<?php echo HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.MEDINFI_FAVICON_IMAGE ?>">
+	<!--Blog Language selector Style-->
+	<style>
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
 
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 2px 6px;
+		z-index: 1;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropbtn {
+		background-color: #FD005C;
+		color: white;
+		padding: 20px;
+		font-size: 15px;
+	}
+	</style>
 </head>
 <body>
 <!--The below code was used for testing-->
@@ -82,9 +109,19 @@
 					<a id="logo-anchor" href="<?php echo MEDINFI_FOLDER_BASE_URL."/"?>" onclick="ga('send', {hitType: 'event',eventCategory:'<?php echo $layoutData['pageName'] ?>', eventAction: 'Home',eventLabel: 'Home'});">
 						<img id="medinfi-logo" src="<?php echo HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.MEDINFI_LOGO?>" alt="Medinfi Logo"/>
 					</a>
+				
 				</div>
 
-				<div id="white-space" class="col-lg-7 col-md-6 col-sm-4 col-xs-1">
+				<!--Blog Language selector-->
+				<div style="margin-top: 15px" class="dropdown col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<span class="dropbtn"><b>Language: <?=LANGUAGE?></b></span>
+					<div class="dropdown-content">
+						<p><a href="<?=ENGLISH_BLOG_URL?>">English<a></p>
+						<p><a href="<?=HINDI_BLOG_URL?>">हिंदी<a></p>
+					</div>
+				</div>
+
+				<div id="white-space" class="col-lg-5 col-md-4 col-sm-2 col-xs-2">
 				</div>
 
 				<div id="android-login" class="col-lg-3 col-md-4 col-sm-5 col-xs-5">
