@@ -59,13 +59,13 @@ $this->layoutData = $pageData['layoutData'];
 <div id="page-row" class="row">
 
 
-                <h1 id="blog-category-title" style="font-weight: 400; margin-top: 0px; margin-bottom: 0px;">
-                <div id="featured-posts-col" class="col-sm-12 col-xs-12">
-                    <?php
-                    if(!empty($pageData ['layoutData']['selectedTerm']['selectedTermName'])){
-                      echo $pageData ['layoutData']['selectedTerm']['selectedTermName']." Blog";
-                      }
-                    ?>
+                <h1 id="blog-category-title" style="font-weight: 400;">
+                    <div id="featured-posts-col" class="col-sm-12 col-xs-12" style="margin-bottom: 10px; margin-top: 10px;">
+                        <?php
+                        if(!empty($pageData ['layoutData']['selectedTerm']['selectedTermName'])){
+                          echo $pageData ['layoutData']['selectedTerm']['selectedTermName']." ब्लॉग";
+                          }
+                        ?>
                      </div>
                 </h1>
 

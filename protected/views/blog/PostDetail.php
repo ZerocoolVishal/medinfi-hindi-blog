@@ -68,8 +68,8 @@ $block = $pageData['additional']['block'];
                 echo $xsCategoryLinkHtml;
             }
         ?>
-        <div id="title-row-div" class="row">
-            <div id="post-title-col" class="col-xs-12 col-md-7">
+        <div id="title-row-div" class="row" style="margin-top: 10px">
+            <div id="post-title-col" class="col-xs-12 col-md-8">
     <!--             <div class="row">
                 <div class="col-xs-12" style="text-align:center"> -->
                   <!-- Nitish Jha
@@ -95,7 +95,7 @@ $block = $pageData['additional']['block'];
                            </div>
                            </div> -->
 
-                <h1 id="post-title">
+                <h1 id="post-title" style="font-size: 40px">
                     <?php
                       echo $pageData['postDetails']['postTitle'];
                     ?>
@@ -103,7 +103,7 @@ $block = $pageData['additional']['block'];
 
                 <div>
                         <?php
-                            echo "Posted on <span id='date-and-author'>".$pageData['postDetails']['postDate']."</span>";
+                            echo "<span id='date-and-author'>".$pageData['postDetails']['postDate']."</span> पर प्रविष्ट किया";
 
                             if($block && $pageData['additional']['author']!="null")
                                 echo " by <span id='date-and-author'>".$pageData['additional']['author']." </span><br>";
@@ -115,7 +115,7 @@ $block = $pageData['additional']['block'];
         </div>
         <!--Col containing post content,share tags comments, reply -->
         <div id="content-row-div" class="row">
-            <div id="post-detail-col" class="col-xs-12 col-md-7">
+            <div id="post-detail-col" class="col-xs-12 col-md-12" style="font-size: 20px;">
 
             <?php if($block && $pageData['additional']['imgClickLink']!=""){ ?>
             <a id"linkid" onclick="return openImgLink();" >
@@ -126,22 +126,14 @@ $block = $pageData['additional']['block'];
             <?php    } ?>
 
                 <div class="row" style="padding-left: 15px;">
-                    <div id="center-share-div" class="col-xs-6 ">
+                    <div id="center-share-div" class="col-xs-6 " >
                                             <a id="center-share-img-anchor" class="share-feedback-img-anchor">
                                                 <img id="center-share-img" class="share-feedback-img" src="<?php echo SHARE_POST_ENCODED_IMAGE?>" alt=""/>
-                                                <div id="center-share-text" class="share-feedback-text ">
+                                                <div id="center-share-text" class="share-feedback-text " style="font-size: 20px">
                                                     <?php echo SHARE_TEXT ?>
                                                 </div>
                                             </a>
                                          </div>
-                                         <div id="center-newsletter-div" class="col-xs-6 ">
-                                            <a id="center-newsletter-img-anchor" class="newsletter-img-anchor">
-                                            <img id="modal-newsletter-img" class="newsletter-img" src="<?php echo HOST_NAME.Yii::app()->baseUrl.POST_DETAIL_PAGE_IMAGE_BASE_PATH.GET_NEWSLETTER?>" alt=""/>
-                                            <div id="center-newsletter-text" class="newsletter-text ">
-                                                <?php echo GET_HEALTH_NEWSLETTER; ?>
-                                            </div>
-                                                           </a>
-                                          </div>
                              </div>
 
                  <div id="ads">
@@ -251,7 +243,29 @@ $block = $pageData['additional']['block'];
                 </div>
 
                 <?php
-                   
+                if(!empty($pageData['postTagList'])){
+                    $postTagList = $pageData['postTagList'];
+                    $postTagHtml = '<div id="post-tags">
+                    <span>Tagged ';
+                    for($index=0;$index < sizeOf($postTagList);$index++){
+                        $tag = $postTagList[$index];
+                        $processedTagName = str_replace("\'","",$tag['tagName']);
+                        $postTagHtml = $postTagHtml.'
+                            <a class="tag-anchor" href="'.$tag['tagUrl'].'" onclick="ga(\'send\', {hitType: \'event\',eventCategory:\''.$layoutData['pageName'].'\', eventAction: \'Clicked on tag\',eventLabel: \'Clicked on tag '.$processedTagName.'\'});">
+                                '.$tag['tagName'].'
+                            </a>';
+                        if($index < (sizeof($postTagList)-1)){
+                            $postTagHtml = $postTagHtml.',';
+                        }
+                        else{
+                            $postTagHtml = $postTagHtml.'.';
+                        }
+                    }
+                    $postTagHtml = $postTagHtml.'
+                    </span>
+                </div>';
+                    echo $postTagHtml;
+                }
              /*  if($pageData ['primeSurveyDetail']['isSurveyEnable'] == "TRUE"){
                      if($processedCategoryName == "Womens Health"){?>
                       <div id="survey-questions" class="row">
@@ -396,11 +410,11 @@ $block = $pageData['additional']['block'];
                     <?php echo $commentSectionHtml ?>
 
                     <div id="response-section" name="response-section">
-                        <h3 id="response-section-title">Leave a reply</h3>
+                        <h3 id="response-section-title">उत्तर छोड़ दें</h3>
                         <div id="response-form">
                             <div id="comment-area" class="response-form-row">
                                 <div id="response-comment-label-div" class="reponse-form-label-div">
-                                    <label id="response-comment-label">Comment</label>
+                                    <label id="response-comment-label">टिप्पणी</label>
                                 </div>
                                 <div id="response-comment-text-area-div" class="reponse-form-input-div">
                                     <textarea id="response-comment-text-area" class="reponse-form-input" rows="8"></textarea>
@@ -409,7 +423,7 @@ $block = $pageData['additional']['block'];
                             </div>
                             <div id="name-input" class="response-form-row">
                                 <div id="response-name-label-div" class="reponse-form-label-div">
-                                    <label id="response-name-label">Name</label>
+                                    <label id="response-name-label">नाम</label>
                                 </div>
                                 <div id="response-name-input-div" class="reponse-form-input-div">
                                     <input id="response-name-input" class="reponse-form-input" type="text">
@@ -417,7 +431,7 @@ $block = $pageData['additional']['block'];
                             </div>
                             <div id="email-input" class="response-form-row" >
                                 <div id="response-email-label-div" class="reponse-form-label-div">
-                                    <label id="response-comment-label">Email</label>
+                                    <label id="response-comment-label">ईमेल</label>
                                 </div>
                                 <div id="response-email-input-div" class="reponse-form-input-div">
                                     <input id="response-email-input" class="reponse-form-input" type="text">
@@ -429,7 +443,7 @@ $block = $pageData['additional']['block'];
                                 <div id="post-button-whitespace" class="reponse-form-label-div">
                                 </div>
                                 <div id="post-button-div" class="reponse-form-input-div">
-                                     <button id="post-button" type="button">POST COMMENT</button>
+                                     <button id="post-button" type="button">उत्तर पोस्ट करें</button>
                                 </div>
                                 <input type="hidden" name="comment_post_ID" value="<?php echo $pageData['postDetails']['id'] ?>" id="comment_post_ID">
                                 <input type="hidden" name="comment_parent" id="comment_parent" value="0">

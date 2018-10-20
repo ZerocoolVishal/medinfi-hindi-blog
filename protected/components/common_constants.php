@@ -162,7 +162,7 @@ define("LOGIN_IMAGE","login.png");
 
 //Constant texts
 define("FEEDBACK_TEXT","GIVE YOUR FEEDBACK");
-define("SHARE_TEXT","SHARE WITH FRIENDS");
+define("SHARE_TEXT","दोस्तों के साथ बांटें");
 define("RECENT_POSTS","RECENT POSTS");
 define("POPULAR_POSTS","POPULAR POSTS");
 define("GET_HEALTH_NEWSLETTER","GET HEALTH NEWSLETTER");
@@ -172,7 +172,7 @@ define("HOW_OFTEN_SHOULD_WE_SEND","How often should we send?");
 define("VIEW_ALL_BLOG_POSTS","View All Blog Posts");
 define("MEDINFI_MOBILE_NAV_TEXT","MEDINFI BLOG");
 define("COMMENT_SECTION_TITLE"," Thoughts on this blog post");
-define("COMMENT_EMAIL_SUBTEXT","will not be published");
+define("COMMENT_EMAIL_SUBTEXT","आपका उत्तर प्रकाशित नहीं किया जाएगा");
 define("COMMENT_ERROR_MESSAGE","Please type a comment");
 define("EMAIL_ERROR_MESSAGE","Please enter a valid Email ID");
 define("SUBSCRIBE_ERROR_MESSAGE","Please choose a subscription plan");
