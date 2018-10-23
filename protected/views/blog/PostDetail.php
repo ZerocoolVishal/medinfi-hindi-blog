@@ -30,6 +30,15 @@ $block = $pageData['additional']['block'];
         var readMore = "<?php echo $pageData['userCurrentLocation']['readMoreOption']?>";
         var imgClickLink = "<?php echo $pageData['additional']['imgClickLink']?>";
     </script>
+    <style>
+        #post-image {
+            max-width: 750px;
+        }
+
+        #post-content {
+            max-width: 900px;
+        }
+    </style>
 </head>
 
 <body>
@@ -69,7 +78,7 @@ $block = $pageData['additional']['block'];
             }
         ?>
         <div id="title-row-div" class="row" style="margin-top: 10px">
-            <div id="post-title-col" class="col-xs-12 col-md-8">
+            <div id="post-title-col" class="col-xs-12 col-md-12">
     <!--             <div class="row">
                 <div class="col-xs-12" style="text-align:center"> -->
                   <!-- Nitish Jha
