@@ -111,6 +111,11 @@
         .selected-inner-div {
             display: block;
         }
+        @media (min-width: 500px) {
+            #page-row {
+                padding-top: 50px;
+            }
+        }
 
     </style>
 </head>
@@ -122,13 +127,13 @@
 
 <div id="page-wrap">
     <div id="header" class="header">
-    
+
         <div id="bootstrap-container" class="container">
 
             <div id="header-logo-row" class="row">
 
-                <div class="col-md-1">
-                    <span id="mobile-navigation-button"><!--&#9776;-->
+                <div class="col-md-9">
+                    <span id="mobile-navigation-button" onclick="showMobileNav()"><!--&#9776;-->
                         <div class="mobile-navigation-div"></div>
                         <div class="mobile-navigation-div"></div>
                         <div class="mobile-navigation-div"></div>
@@ -139,9 +144,6 @@
                              src="<?php echo HOST_NAME . Yii::app()->baseUrl . TEMPLATE_IMAGE_BASE_PATH . MEDINFI_LOGO ?>"
                              alt="Medinfi Logo"/>
                     </a>
-                </div>
-
-                <div class="col-md-8">
                     <div class="dropdown">
                         <span class="dropbtn"><b>Language: <?= LANGUAGE ?></b> <i class="fas fa-sort-down"></i></span>
                         <div class="dropdown-content">
@@ -186,7 +188,7 @@
 						<label id="nav-bar-label">
 							' . MEDINFI_MOBILE_NAV_TEXT . '
 						</label>
-						<a id = "nav-close" href="javascript:void(0)" class="close-button">&times;</a>
+						<a id = "nav-close" href="javascript:void(0)" onclick="hideMobileNav()" class="close-button">&times;</a>
 					</div>';
 
                     for ($index = 0; $index < sizeof($categories); $index++) {
@@ -229,7 +231,7 @@
             </div>
         </div><!--bootstrap-container-->
     </div>
-    <div id="page" class="container" style="margin-top: 30px">
+    <div id="page" class="container">
         <?php echo $content; ?>
     </div><!-- page -->
 </div><!--page-wrap-->
@@ -298,6 +300,48 @@ if (isset($mobileNavigationHtml)) {
 <script type="text/javascript">
     document.getElementById('med1Doctor').style.display = "none";
     document.getElementById('med1Doctor').setAttribute("aria-hidden", "true");
+</script>
+
+<script type="application/javascript">
+
+    function showMobileNav (e) {
+
+        document.getElementById("mobile-nav-div").style.width = "260px";
+        document.getElementById("mobile-nav-div").style.borderRight = "#D9D9D9 solid thin";
+        document.getElementById("mobile-nav-div").style.overflow = "auto";
+        document.body.style.overflow = "hidden";
+        document.getElementById("page-wrap").style.backgroundColor = "#ffffff";
+        document.getElementById("page-wrap").style.opacity = "0.3";
+        document.getElementById("page-wrap").style.pointerEvents = "none";
+        document.getElementById("footer").style.backgroundColor = "#ffffff";
+        document.getElementById("footer").style.opacity = "0.3";
+        document.getElementById("footer").style.pointerEvents = "none";
+        ga("send", {
+            hitType: "event",
+            eventCategory: pageName,
+            eventAction: "Open Nav Bar",
+            eventLabel: "Open Nav Bar"
+        })
+    }
+
+    function hideMobileNav(e) {
+
+        document.body.style.overflow = "auto";
+        document.getElementById("mobile-nav-div").style.width = "0";
+        document.getElementById("mobile-nav-div").style.borderRight = "0px";
+        document.getElementById("page-wrap").style.backgroundColor = "#ffffff";
+        document.getElementById("page-wrap").style.opacity = "1.0";
+        document.getElementById("page-wrap").style.pointerEvents = "auto";
+        document.getElementById("footer").style.backgroundColor = "#ffffff";
+        document.getElementById("footer").style.opacity = "1.0";
+        document.getElementById("footer").style.pointerEvents = "auto";
+        ga("send", {
+            hitType: "event",
+            eventCategory: pageName,
+            eventAction: "Close Nav Bar",
+            eventLabel: "Close Nav Bar"
+        })
+    }
 </script>
 
 </body>

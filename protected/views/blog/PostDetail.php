@@ -77,7 +77,7 @@ $block = $pageData['additional']['block'];
                 echo $xsCategoryLinkHtml;
             }
         ?>
-        <div id="title-row-div" class="row" style="margin-top: 10px">
+        <div id="title-row-div" class="row">
             <div id="post-title-col" class="col-xs-12 col-md-12">
     <!--             <div class="row">
                 <div class="col-xs-12" style="text-align:center"> -->
@@ -136,7 +136,7 @@ $block = $pageData['additional']['block'];
 
                 <div class="row" style="padding-left: 15px;">
                     <div id="center-share-div" class="col-xs-6 " >
-                                            <a id="center-share-img-anchor" class="share-feedback-img-anchor">
+                                            <a id="center-share-img-anchor" onclick="showShare()" class="share-feedback-img-anchor">
                                                 <img id="center-share-img" class="share-feedback-img" src="<?php echo SHARE_POST_ENCODED_IMAGE?>" alt=""/>
                                                 <div id="center-share-text" class="share-feedback-text " style="font-size: 20px">
                                                     <?php echo SHARE_TEXT ?>
@@ -482,7 +482,7 @@ $block = $pageData['additional']['block'];
             <div id="shareModalHeader">
                 <img id="modal-share-img" class="share-feedback-img" src="<?php echo HOST_NAME.SHARE_POST_ENCODED_IMAGE?>" alt=""/>
                 <span>&nbsp;&nbsp;SHARE WITH FRIENDS</span>
-                <span id="shareClose" class="close">&times;</span>
+                <span id="shareClose" onclick="shareClose()" class="close">&times;</span>
             </div>
 
             <div id="shareModalBody">
@@ -587,4 +587,14 @@ $block = $pageData['additional']['block'];
              </div>
           </div>
         </div>
+
+        <script type="application/javascript">
+            function showShare() {
+                document.getElementById('shareModal').style.display = "block";
+            }
+
+            function shareClose() {
+                document.getElementById('shareModal').style.display = "none";
+            }
+        </script>
 </body>

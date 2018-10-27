@@ -2,12 +2,12 @@
 
 //Base paths
 //Original Version
-/*define("CSS_BASE_PATH","/css/v9.2/originals/");
-define("JS_BASE_PATH","/js/v9.2/originals/");*/
+define("CSS_BASE_PATH","/css/v9.2/originals/");
+define("JS_BASE_PATH","/js/v9.2/originals/");
 
 //Minified Version
-define("CSS_BASE_PATH","/css/v9.2/");
-define("JS_BASE_PATH","/js/v9.2/");
+/*define("CSS_BASE_PATH","/css/v9.2/");
+define("JS_BASE_PATH","/js/v9.2/");*/
 
 //Language of the Blog
 define("LANGUAGE","हिंदी");
@@ -21,7 +21,7 @@ define("ERROR_IMAGE_BASE_PATH","/images/error/");
 
 //CSS files
 //Original Version
-/*define("POST_DETAIL_CSS","post-detail.css");
+define("POST_DETAIL_CSS","post-detail.css");
 define("ERROR_PAGE_CSS","error-page.css");
 define("HOME_PAGE_CSS","home-page.css");
 define("LIST_SEARCH_PAGE_CSS","list-search-page.css");
@@ -30,11 +30,11 @@ define("TEMPLATE_CSS","template.css");
 define("MAIN_CSS","main.css");
 define("MENU_STYLE_CSS","menu-styles.css");
 define("STYLE_CSS","style.css");
-define("CALENDER_CSS","calender.css");*/
+define("CALENDER_CSS","calender.css");
 
 
 //Minified Version
-define("POST_DETAIL_CSS","post-detail.min.css");
+/*define("POST_DETAIL_CSS","post-detail.min.css");
 define("ERROR_PAGE_CSS","error-page.min.css");
 define("HOME_PAGE_CSS","home-page.min.css");
 define("LIST_SEARCH_PAGE_CSS","list-search-page.min.css");
@@ -43,7 +43,7 @@ define("TEMPLATE_CSS","template.min.css");
 define("MAIN_CSS","main.min.css");
 define("MENU_STYLE_CSS","menu-styles.min.css");
 define("STYLE_CSS","style.min.css");
-define("CALENDER_CSS","calender.min.css");
+define("CALENDER_CSS","calender.min.css");*/
 
 
 //JS files
