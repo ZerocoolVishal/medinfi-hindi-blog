@@ -69,7 +69,7 @@
 
     <link rel="shortcut icon"
           href="<?php echo HOST_NAME . Yii::app()->baseUrl . TEMPLATE_IMAGE_BASE_PATH . MEDINFI_FAVICON_IMAGE ?>">
-    <!--Blog Language selector Style-->
+
     <style>
         .dropdown {
             position: relative;
@@ -111,6 +111,7 @@
         .selected-inner-div {
             display: block;
         }
+        
         @media (min-width: 500px) {
             #page-row {
                 padding-top: 50px;
