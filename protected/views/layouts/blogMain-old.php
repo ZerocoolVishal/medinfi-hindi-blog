@@ -69,11 +69,27 @@
 	
 	<!--By VB @ 28-10-2018-->
 	<style>
+		
 		.dropdown {
             position: relative;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 15px;
+			margin-left: 20px;
         }
+
+		@media only screen and (max-width: 768px) {
+			.dropdown {
+				margin-top: 10px;	
+        	}
+
+			#android-download-top {
+				margin-top: -32px;
+			}
+			
+			.page-row-class {
+				padding-top: 5px;
+			}
+		}
 
         .dropdown-content {
             display: none;
@@ -87,11 +103,7 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
-        .dropbtn {
-            padding: 20px;
-            font-size: 15px;
-        }
+	
 	</style>
 
 </head>
@@ -101,9 +113,10 @@
 <button onClick="sendNotification()">Send Notification</button>-->
 <div id="page-wrap">
 	<div id="header" class="header">
-		<div id="bootstrap-container" class="container" >
+		<div id="bootstrap-container" class="container">
+
 			<div id="header-logo-row" class="row" >
-				<div id="logo" class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+				<div id="logo" class="col-lg-9 col-md-8 col-sm-6" >
 					<?php
 						if(!empty($this->layoutData['categories'])){
 							echo '
@@ -118,12 +131,8 @@
 						<img id="medinfi-logo" src="<?php echo HOST_NAME.Yii::app()->baseUrl.TEMPLATE_IMAGE_BASE_PATH.MEDINFI_LOGO?>" alt="Medinfi Logo"/>
 					</a>
 
-					<!--
-						Language select dropdown
-						By VB @ 28-10-2018
-					-->
 					<div class="dropdown">
-                        <span class="dropbtn"><b>Language: <?= LANGUAGE ?></b> <i class="fas fa-sort-down"></i></span>
+                        <span class="dropbtn"><b>LANGUAGE: <span style="color: #ea235b;"><?=LANGUAGE?></span></b></span> <i class="fas fa-sort-down dropdown-ico fa-2x"></i>
                         <div class="dropdown-content">
                             <p><a href="<?= ENGLISH_BLOG_URL ?>">English<a></p>
                             <p><a href="<?= HINDI_BLOG_URL ?>">हिंदी<a></p>
@@ -131,10 +140,8 @@
                     </div>
 				</div>
 
-				<div id="white-space" class="col-lg-6 col-md-5 col-sm-4 col-xs-1">
-				</div>
+				<div id="android-login" class="col-lg-3 col-md-4 col-sm-6">
 
-				<div id="android-login" class="col-lg-3 col-md-4 col-sm-5 col-xs-5">
 				<div id="android-download-top">
 					<a rel="nofollow" id="get-app-anchor" href="https://play.google.com/store/apps/details?id=com.medinfi" target="_blank" onclick="ga('send', {hitType: 'event',eventCategory:'<?php echo $layoutData['pageName'] ?>', eventAction: 'Download App Top',eventLabel: 'Download App Top'});">
 						<span id="get-app-text">
@@ -144,7 +151,7 @@
 					</a>
 				</div>
 
-				 <div id="Login-Button">
+				<div id="Login-Button">
                    <?php if(isset(Yii::app()->session['userId'])) { ?>
                      <a style="text-decoration: none; color: black !important;" id="login" onclick="ga('send', {hitType: 'event',eventCategory: <?php echo "'".$this->pageName."'"?>,eventAction: 'Login/Logout',eventLabel: 'Logout'});"  href="<?php
                        // if(!Yii::app()->user->isGuest && Yii::app()->user->role<3){
@@ -158,8 +165,9 @@
                      <a id="login" style="text-decoration: none; color: black !important;" onclick="ga('send', {hitType: 'event',eventCategory: <?php echo "'".$this->pageName."'"?>,eventAction: 'Login/Logout',eventLabel: 'Login'});"  href="<?php echo HOST_NAME.Yii::app()->baseUrl.LOGIN_URL; ?>">LOGIN</a>
                         <?php }?>
                 </div><!--Login-Button ends -->
-</div>
+				</div>
 			</div><!--header-logo-row-->
+
 			<div id="blog-search-row" class="row" >
 				<div id="txt-search-bar" class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
 					<div id="txt-search-bar-row" class="row" >
@@ -324,8 +332,10 @@
 					</a>
 				</div>
 			</div>
+
 			<div class="col-lg-3 col-md-3 col-sm-1 col-xs-0 ">
 			</div>
+
 			<div id="copyright" class="col-lg-4 col-md-4 col-sm-5 col-xs-12 ">
 				&copy; 2014-<?php echo date('Y');?> Medinfi <sup>TM</sup> Healthcare Pvt Ltd
 			</div>
@@ -346,7 +356,6 @@
    document.getElementById('med1Doctor').style.display = "none";
    document.getElementById('med1Doctor').setAttribute("aria-hidden", "true");
    </script>
-
 </body>
 
        <!-- ever cookies and jquery JS -->
