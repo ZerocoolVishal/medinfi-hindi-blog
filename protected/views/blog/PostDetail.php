@@ -135,8 +135,8 @@ $block = $pageData['additional']['block'];
             <?php    } ?>
 
                 <div class="row" style="padding-left: 15px;">
-                    <div id="center-share-div" class="col-xs-6 " >
-                                            <a id="center-share-img-anchor" onclick="showShare()" class="share-feedback-img-anchor">
+                    <div id="center-share-div" class="col-xs-12 " >
+                                            <a id="center-share-img-anchor" onclick="showShare()" class="share-feedback-img-anchor" style="width: 100%;">
                                                 <img id="center-share-img" class="share-feedback-img" src="<?php echo SHARE_POST_ENCODED_IMAGE?>" alt=""/>
                                                 <div id="center-share-text" class="share-feedback-text " style="font-size: 20px">
                                                     <?php echo SHARE_TEXT ?>

@@ -56,6 +56,13 @@ $this->layoutData = $pageData['layoutData'];
                   }
 
          </script>
+         <style>
+            @media only screen and (max-width: 768px) {
+                #page-row {
+                    padding-top: 0px !important;
+                }
+            }
+         </style>
 <div id="page-row" class="row">
 
 

@@ -163,11 +163,11 @@
 
 					<div class="dropdown">
                         <span class="dropbtn">
-                            <b>LANGUAGE: <span style="color: #ea235b;"><?=LANGUAGE?></span> <i class="fas fa-sort-down dropdown-ico fa-2x"></i></b>
+                            <b>LANGUAGE: <span style="color: #ea235b;"><?=LANGUAGE?></span> <i class="fas fa-sort-down dropdown-ico" style="font-size: 25px;"></i></b>
                         </span>
                         <div class="dropdown-content">
                             <p><a href="<?= ENGLISH_BLOG_URL ?>">English<a></p>
-                            <p><a href="<?= HINDI_BLOG_URL ?>">हिंदी<a></p>
+                            <p style="font-size:18px;"><a href="<?= HINDI_BLOG_URL ?>">हिंदी<a></p>
                         </div>
                     </div>
 				</div>

@@ -73,7 +73,13 @@
             position: relative;
             display: inline-block;
             margin-top: 15px;
-		margin-left: 20px;
+			margin-left: 20px;
+        }
+
+		@media (max-width: 768px) {
+            .header+.container {
+                padding-top: 100px!important;
+            }
         }
 
 		@media only screen and (max-width: 768px) {
@@ -131,10 +137,12 @@
 					</a>
 
 					<div class="dropdown">
-                        <span class="dropbtn"><b>LANGUAGE: <span style="color: #ea235b;"><?=LANGUAGE?></span></b></span> <i class="fas fa-sort-down dropdown-ico fa-2x"></i>
-                        <div class="dropdown-content">
+                        <span class="dropbtn">
+                            <b>LANGUAGE: <span style="color: #ea235b;"><?=LANGUAGE?></span> <i class="fas fa-sort-down dropdown-ico" style="font-size: 25px;"></i></b>
+                        </span>
+						<div class="dropdown-content">
                             <p><a href="<?= ENGLISH_BLOG_URL ?>">English<a></p>
-                            <p><a href="<?= HINDI_BLOG_URL ?>">हिंदी<a></p>
+                            <p style="font-size:18px;"><a href="<?= HINDI_BLOG_URL ?>">हिंदी<a></p>
                         </div>
                     </div>
 				</div>
