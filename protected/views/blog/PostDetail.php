@@ -89,7 +89,7 @@ $block = $pageData['additional']['block'];
                 <?php
                     /* if(array_key_exists($layoutData['postId'],$GLOBALS['top_level'])) {
                           echo '<div class="amazon_affiliate_ads">'.$GLOBALS['top_level'][$layoutData['postId']].'</div>';
-                    } */ ?>
+                    } */ ?>-->
 
 
                    <!-- Amazon affiliated banner ads -->
@@ -127,7 +127,7 @@ $block = $pageData['additional']['block'];
             <div id="post-detail-col" class="col-xs-12 col-md-12" style="font-size: 20px;">
 
             <?php if($block && $pageData['additional']['imgClickLink']!=""){ ?>
-            <a id"linkid" onclick="return openImgLink();" >
+            <a id="linkid" onclick="return openImgLink();" >
             <img id="post-image" src="<?php echo $pageData['postDetails']['postImage']?>" />
             </a>
             <?php }else{ ?>
