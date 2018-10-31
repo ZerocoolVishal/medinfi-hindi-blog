@@ -10,8 +10,8 @@ define("CSS_BASE_PATH","/css/v9.2/");
 define("JS_BASE_PATH","/js/v9.2/");
 
 //Language of the Blog
-//define("LANGUAGE","हिंदी");
-define("LANGUAGE","ENG");
+define("LANGUAGE","हिंदी");
+//define("LANGUAGE","ENG");
 
 define('HINDI_BLOG_URL', "#");
 define('ENGLISH_BLOG_URL', "#");
